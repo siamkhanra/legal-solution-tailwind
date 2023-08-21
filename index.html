@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solution</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/901df9ab27.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Section -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                color: '#B68C5A',
+                nav: '#949393',
+                bgc: '#F3F3F3',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .accordion-input:checked ~ .accordion-content {
+            max-height: 100vh; /* Adjust as needed */
+            padding: 5px;
+        }
+
+        .accordion-toggle::after {
+            content: "+";
+            transition: transform 0.2s ease;
+        }
+
+        .accordion-input:checked ~ .accordion-toggle::after {
+            content: "-";
+            transform: rotate(180deg);
+        }
+      </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="mt-7 w-full">
+        <!-- Nav Section -->
+        <nav class="flex-none md:flex justify-center items-center">
+            <div class="flex-none md:flex justify-around md:space-x-4 md:px-2 lg:space-x-28 space-x-28">
+                <div class="flex justify-center mx-auto mb-3">
+                    <img class="w-11/12 md:w-full flex mx-auto" src="images/logo2.png" alt="">
+                </div>
+                <div class="md:flex items-center mb-3">
+                    <ul class="list-none md:flex justify-between md:space-x-3 lg:space-x-8 space-x-8 text-nav">
+                        <li><a class="pl-8 md:pl-2" href="">Home</a></li>
+                        <li><a href="">Services <i class="fa-solid fa-chevron-right" style="color: #949393;"></i> </a></li>
+                        <li><a href="">Cases <i class="fa-solid fa-chevron-right" style="color: #949393;"></i> </a></li>
+                        <li><a href="">Blog <i class="fa-solid fa-chevron-right" style="color: #949393;"></i> </a></li>
+                        <li><a href="">Contact Us <i class="fa-solid fa-chevron-right" style="color: #949393;"></i> </a></li>
+                    </ul>
+                </div>
+                <div class="sm:flex sm:justify-center sm:mx-auto md:mt-0">
+                    <button class="px-5 py-3 md:px-1 md:py-3 bg-color text-white rounded-lg text-sm">Free Consultation</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Legal Solution Section -->
+        <section class="flex justify-center mt-7">
+            <div class="bg-[url('images/banner.png')] w-full md:w-4/5 h-[400px] py-8 md:py-14 md:px-36 text-white font-semibold text-center rounded-lg">
+                <div>
+                    <h1 class="text-5xl md:text-4xl lg:text-6xl">We Provide Effective Legal Solutions</h1>
+                    <p class="text-sm py-6 lg:py-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+                <div class="flex">
+                    <input class="placeholder:text-slate-400 block bg-white border border-slate-300 rounded py-2 pl-9 md:pl-2 pr-3 w-3/4 md:w-full ms-3  text-black" placeholder="Search your services" type="text" name="search"/>
+                    <button class="ms-4 mr-4 md:mr-0 px-9 py-3 bg-color text-white rounded-lg">Search</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Practice Area -->
+        <section class="mx-auto w-full md:w-full lg:w-3/4">
+            <div class="mx-auto text-center py-8 md:py-16 md:px-32 lg:px-40">
+                <h1 class="text-3xl md:text-4xl font-semibold">The Legal Practice Area</h1>
+                <p class="text-sm md:text-base py-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div>
+                <div class="flex-none md:flex justify-center">
+                    <div class="space-y-3 items-center text-center p-12 border-r border-b">
+                        <img class="w-14 h-14 mx-auto" src="images/business.png" alt="">
+                        <h1 class="text-2xl font-semibold">Business Law</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <i class="fa-solid fa-circle-arrow-right text-color"></i>
+                    </div>
+                    <div class="space-y-3 items-center text-center p-12 border" style="background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0.00) 100%);">
+                        <img class="w-14 h-14 mx-auto" src="images/criminal.png" alt="">
+                        <h1 class="text-2xl font-semibold">Criminal Law</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <i class="fa-solid fa-circle-arrow-right text-color"></i>
+                    </div>
+                    <div class="space-y-3 items-center text-center p-12 border-l border-b">
+                        <img class="w-14 h-14 mx-auto" src="images/child.png" alt="">
+                        <h1 class="text-2xl font-semibold">Child Support Law</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <i class="fa-solid fa-circle-arrow-right text-color"></i>
+                    </div>
+                </div>
+                <div class="flex-none md:flex">
+                    <div class="space-y-3 items-center text-center p-12 border-r">
+                        <img class="w-14 h-14 mx-auto" src="images/education.png" alt="">
+                        <h1 class="text-2xl font-semibold">Education Law</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <i class="fa-solid fa-circle-arrow-right text-color"></i>
+                    </div>
+                    <div class="space-y-3 items-center text-center p-12 border-r">
+                        <img class="w-14 h-14 mx-auto" src="images/divorce.png" alt="">
+                        <h1 class="text-2xl font-semibold">Divorce Law</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <i class="fa-solid fa-circle-arrow-right text-color"></i>
+                    </div>
+                    <div class="space-y-3 items-center text-center p-12">
+                        <img class="w-14 h-14 mx-auto" src="images/tax.png" alt="">
+                        <h1 class="text-2xl font-semibold">Tax Law</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <i class="fa-solid fa-circle-arrow-right text-color "></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Client Area -->
+        <section class="mx-auto w-full md:w-11/12 lg:w-3/4">
+            <div class="mx-auto text-center py-16 md:px-32 lg:px-40">
+                <h1 class="text-3xl md:text-4xl font-semibold">What Our Client Say</h1>
+                <p class="text-sm md:text-base py-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active relative">
+                        <img class="md:w-11/12 w-full h-full md:h-[400px] mx-auto" src="images/slider-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption top-1 md:top-1/3 -translate-y-1 transform md:-translate-y-1/3">
+                          <img class="w-10 h-10 md:w-20 md:h-20 mx-auto" src="images/player-1.png" alt="">
+                          <h1 class="text-base pt-1 py-1 md:text-2xl font-semibold md:py-2">Awlad Hossain</h1>
+                          <h3 class="text-sm md:text-base sm:pt-0">UX Designer</h3>
+                          <p class="pt-1 md:mt-3 md:text-base text-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item relative">
+                        <img class="md:w-11/12 w-full h-full md:h-[400px] mx-auto" src="images/slider-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption top-1 md:top-1/3 -translate-y-1 transform md:-translate-y-1/3">
+                          <img class="w-10 h-10 md:w-20 md:h-20 mx-auto" src="images/player-2.png" alt="">
+                          <h1 class="text-base pt-1 py-1 md:text-2xl font-semibold md:py-2">Awlad Hossain</h1>
+                          <h3 class="text-sm md:text-base sm:pt-0">UX Designer</h3>
+                          <p class="pt-1 md:mt-3 md:text-base text-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item relative">
+                        <img class="md:w-11/12 w-full h-full md:h-[400px] mx-auto" src="images/slider-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption top-1 md:top-1/3 -translate-y-1 transform md:-translate-y-1/3">
+                          <img class="w-10 h-10 md:w-20 md:h-20 mx-auto" src="images/player-3.png" alt="">
+                          <h1 class="text-base pt-1 py-1 md:text-2xl font-semibold md:py-2">Awlad Hossain</h1>
+                          <h3 class="text-sm md:text-base sm:pt-0">UX Designer</h3>
+                          <p class="pt-1 md:mt-3 md:text-base text-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ Section -->
+        <section class="mx-auto w-full md:w-11/12 lg:w-3/4">
+            <div class="mx-auto text-center py-16 md:px-32 lg:px-40">
+                <h1 class="text-3xl md:text-4xl font-semibold">Frequently Asked Any Questions</h1>
+                <p class="text-sm md:text-base py-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="flex-none md:flex">
+                <div class="md:w-1/2 mb-4 text-black">
+                    <div class="space-y-4">
+                        <!-- Accordion Item 1 -->
+                        <div class="border p-4 rounded shadow-md">
+                            <input type="checkbox" class="accordion-input hidden" id="accordionOne">
+                            <label class="w-full flex items-center justify-between p-2 font-semibold bg-gray-100 hover:bg-gray-200 focus:outline-none cursor-pointer accordion-toggle" for="accordionOne">
+                                <span>Accordion Item #1</span>
+                            </label>
+                            <div class="accordion-content">
+                                <div class="p-2">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat for other accordion items... -->
+                        <div class="border p-4 rounded shadow-md">
+                            <input type="checkbox" class="accordion-input hidden" id="accordionTwo">
+                            <label class="w-full flex items-center justify-between p-2 font-semibold bg-gray-100 hover:bg-gray-200 focus:outline-none cursor-pointer accordion-toggle" for="accordionTwo">
+                                <span>Accordion Item #2</span>
+                            </label>
+                            <div class="accordion-content">
+                                <div class="p-2">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border p-4 rounded shadow-md">
+                            <input type="checkbox" class="accordion-input hidden" id="accordionThree">
+                            <label class="w-full flex items-center justify-between p-2 font-semibold bg-gray-100 hover:bg-gray-200 focus:outline-none cursor-pointer accordion-toggle" for="accordionThree">
+                                <span>Accordion Item #3</span>
+                            </label>
+                            <div class="accordion-content">
+                                <div class="p-2">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border p-4 rounded shadow-md">
+                            <input type="checkbox" class="accordion-input hidden" id="accordionFour">
+                            <label class="w-full flex items-center justify-between p-2 font-semibold bg-gray-100 hover:bg-gray-200 focus:outline-none cursor-pointer accordion-toggle" for="accordionFour">
+                                <span>Accordion Item #4</span>
+                            </label>
+                            <div class="accordion-content">
+                                <div class="p-2">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 pl-8 flex max-auto items-center">
+                    <img class="w-11/12 h-11/12" src="images/faq.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="mx-auto w-full md:w-11/12 lg:w-3/4">
+            <div class="mx-auto text-center py-16 md:px-32 lg:px-40">
+                <h1 class="text-3xl md:text-4xl font-semibold">Contact With Us</h1>
+                <p class="text-sm md:text-base py-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="w-full md:flex lg:flex flex-none md:space-x-7 lg:space-x-7 space-x-0 space-y-7 md:space-y-0 lg:space-y-0">
+                <div class="w-full lg:w-1/2 md:w-1/2 h-full flex-none md:flex lg:flex justify-center">
+                    <div class="bg-bgc">
+                        <div class="flex flex-col justify-center space-y-3 items-center text-center px-12 border-b-2 h-60">
+                            <img class="w-10 h-10 mx-auto" src="images/address.png" alt="">
+                            <h1 class="text-2xl font-semibold">Address</h1>
+                            <p>A108 Adam Street,
+                                New York, NY 535022</p>
+                        </div>
+                        <div class="flex flex-col justify-center space-y-3 items-center text-center px-12 h-60 border-b-2 md:border-b-0 lg:border-b-0">
+                            <img class="w-10 h-10 mx-auto" src="images/call.png" alt="">
+                            <h1 class="text-2xl font-semibold">Call Us</h1>
+                            <p>+88 01750 00 00 00
+                                +88 01750 00 00 00</p>
+                        </div>
+                    </div>
+                    <div class="bg-bgc">
+                        <div class="flex flex-col justify-center space-y-3 items-center text-center px-12 border-l-2 border-b-2 h-60">
+                            <img class="w-10 h-10 mx-auto" src="images/email.png" alt="">
+                            <h1 class="text-2xl font-semibold">Email Us</h1>
+                            <p>info@gmail.com
+                                info@gmail.com</p>
+                        </div>
+                        <div class="flex flex-col justify-center space-y-3 items-center text-center px-12 border-l-2 h-60">
+                            <img class="w-10 h-10 mx-auto" src="images/time.png" alt="">
+                            <h1 class="text-2xl font-semibold">Working Hours</h1>
+                            <p>Mon-Fri: 9AM to 5PM
+                                Sunday: 9AM to 1 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 md:w-1/2 h-full space-y-3">
+                    <input class="bg-bgc px-6 py-6 w-100" placeholder="Your Name" type="text">
+                    <input class="bg-bgc px-6 py-6 w-100" placeholder="Your Email" type="email" name="" id=""> <br>
+                    <input class="bg-bgc px-6 py-6 w-100" placeholder="Your Subject" type="text"> <br>
+                    <textarea class="bg-bgc px-6 py-6 w-100" placeholder="Your Message" name="" id="" cols="20" rows="4"></textarea> <br>
+                    <button class="px-5 py-3 bg-color text-white rounded-lg w-100">Send Message</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black mt-24 mx-auto px-3 md:px-0">
+        <div class="w-full py-16 grid grid-cols-2 gap-4 md:px-5 lg:px-40 text-white md:flex md:flex-row space-y-7 md:space-y-0 md:space-x-7 mx-auto">
+            <div class="mt-2 pt-3 md:w-3/4 md:mt-0 md:pt-0">
+                <img class="w-1/2" src="images/logo.png" alt="">
+                <p class="mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="md:w-1/3 pl-7 space-y-3 flex flex-col">
+                <h1 class="pb-1 mb-6">Useful Link</h1>
+                <a href="">Homes</a> 
+                <a href="">About Us</a> 
+                <a href="">Cases</a> 
+                <a href="">Blog</a> 
+                <a href="">Contact Us</a>
+            </div>
+            <div class="space-y-3">
+                <h1 class="pb-3 mb-6">Contact Now</h1>
+                <p class="mt-4">555 4th 5t NW, Washington
+                    DC 20530, United States</p>
+
+                <p>+88 01750 000 000
+                    +88 01750 000 000</p>
+
+                <p>info@gmail.com
+                    info@gmail.com</p>
+            </div>
+            <div>
+                <h1 class="pb-3 mb-6">Subscribe</h1>
+                <p class="mt-4">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+                <div class="flex py-4">
+                    <input class="placeholder:text-slate-400 block bg-white border border-slate-300 rounded py-3 pl-5 w-3/4   text-black" placeholder="Email" type="text" name="search"/>
+                    <button class="px-2 py-3 w-1/4 bg-color text-white rounded-lg"><i class="fa-solid fa-location-arrow" style="color: #ffffff;"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
